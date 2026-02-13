@@ -1,0 +1,33 @@
+Web Application Deployment Guide (Railway)
+This project is also deployed as a web service using the Railway Cloud Platform to demonstrate the mashup functionality via a browser-based interface.
+🌐 Live Web Application
+The web application is deployed and accessible using the Railway platform.
+Railway free instances may go into sleep mode.
+On first access, the page may take 30–50 seconds to load.
+🛠️ Deployment Platform
+Platform: Railway
+Runtime: Python
+Framework: Flask
+WSGI Server: Gunicorn
+📁 Required Files for Deployment
+The following files are used for deployment:
+app.py → Flask web application entry point
+templates/index.html → Web UI for user input
+requirements.txt → Python dependencies
+runtime.txt → Python runtime version
+README.md → Project documentation
+⚙️ Deployment Configuration on Railway
+Build Command
+pip install -r requirements.txt
+Start Command
+gunicorn app:app
+🧪 How to Use the Web Application
+Open the deployed web application URL.
+Fill in the required fields:
+Singer Name
+Number of Videos
+Duration of each video (seconds)
+Email ID
+Click on Submit.
+The mashup process is executed on the server.
+The final output is generated as per the mashup logic.
